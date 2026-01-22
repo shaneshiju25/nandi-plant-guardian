@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 function GrassBlade({ 
   delay = 0, 
-  height = 60, 
-  x = 0 
+  height = 80, 
+  x = 0
 }: { 
   delay?: number; 
   height?: number; 
@@ -37,10 +37,10 @@ function GrassBlade({
 
 export function GrassAnimation() {
   // Generate random grass positions
-  const grassBlades = Array.from({ length: 100 }, (_, i) => ({
+  const grassBlades = Array.from({ length: 300 }, (_, i) => ({
     id: i,
-    x: (i / 100) * 100 + Math.random() * 1 - 0.5,
-    height: 40 + Math.random() * 60,
+    x: (i / 100) * 100 + Math.random() * 0.5 - 0.2,
+    height: 60 + Math.random() * 80,
     delay: Math.random() * 2,
   }));
 
@@ -50,7 +50,7 @@ export function GrassAnimation() {
       <div 
         className="absolute inset-0"
         style={{ 
-          background: "linear-gradient(to top, hsl(120 45% 30%) 0%, hsl(95 60% 40%) 60%, transparent 100%)" 
+          background: "linear-gradient(to top, hsl(120 45% 30%) 0%, hsl(95 60% 40%) 50%, transparent 100%)" 
         }}
       />
       

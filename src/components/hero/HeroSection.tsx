@@ -76,6 +76,12 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
+            <Link
+            to="https://www.youtube.com/watch?v=_pz31cmTWv8"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+
             <Button
               size="lg"
               variant="outline"
@@ -84,6 +90,7 @@ export function HeroSection() {
               <Play className="mr-2 w-5 h-5" />
               Watch Demo
             </Button>
+            </Link>
           </motion.div>
 
           {/* Stats */}
@@ -94,9 +101,9 @@ export function HeroSection() {
             className="mt-16 grid grid-cols-3 gap-8 md:gap-16"
           >
             {[
-              { value: "99.2%", label: "Detection Accuracy" },
+              { value: "90+%", label: "Detection Accuracy" },
               { value: "50+", label: "Crop Diseases" },
-              { value: "10K+", label: "Scans Completed" },
+              { value: "40K+", label: "Scans Completed" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl md:text-4xl font-bold font-display text-foreground">

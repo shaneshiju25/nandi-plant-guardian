@@ -26,11 +26,11 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>contact@nandidrone.ai</span>
+                <span>nandidrone.queries@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+91 98765 43210</span>
+                <span>+91 75592 77355</span>
               </div>
             </div>
           </div>
@@ -46,6 +46,7 @@ export function Footer() {
                 { label: "Upload Image", path: "/upload" },
                 { label: "Final Report", path: "/report" },
                 { label: "Chat with AI", path: "/chat" },
+                { label: "About us", path: "/about_us" },
               ].map((link) => (
                 <li key={link.path}>
                   <Link
@@ -76,7 +77,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 Nandi Drone. All rights reserved.
+            © 2026 Nandi Drone. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
             Made with 🌱 for farmers everywhere
